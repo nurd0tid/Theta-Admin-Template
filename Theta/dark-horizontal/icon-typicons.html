@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Theta is a bootstrap & laravel admin dashboard template">
+    <meta name="keywords" content="admin, admin dashboard, admin panel, admin template, analytics, bootstrap 4, crm, laravel admin, responsive, sass support, ui kits">
+    <meta name="author" content="Themesbox17">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Theta - Bootstrap + Laravel Admin Dashboard Template</title>
+    <!-- Fevicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- Start css -->
+    <!-- Switchery css -->
+    <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- End css -->
+</head>
+<body class="horizontal-layout">
+    <!-- Start Infobar Notifications Sidebar -->
+    <div id="infobar-notifications-sidebar" class="infobar-notifications-sidebar">
+        <div class="infobar-notifications-sidebar-head d-flex w-100 justify-content-between">
+            <h4>Notifications</h4><a href="javascript:void(0)" id="infobar-notifications-close" class="infobar-notifications-close"><img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close"></a>
+        </div>
+        <div class="infobar-notifications-sidebar-body">
+            <ul class="nav nav-pills nav-justified" id="infobar-pills-tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-messages-tab" data-toggle="pill" href="#pills-messages" role="tab" aria-controls="pills-messages" aria-selected="true">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-emails-tab" data-toggle="pill" href="#pills-emails" role="tab" aria-controls="pills-emails" aria-selected="false">Emails</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-actions-tab" data-toggle="pill" href="#pills-actions" role="tab" aria-controls="pills-actions" aria-selected="false">Actions</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="infobar-pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-messages" role="tabpanel" aria-labelledby="pills-messages-tab">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <img class="mr-3 align-self-center rounded-circle" src="assets/images/users/girl.svg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5>Amy Adams<span class="badge badge-success">1</span><span class="timing">Jan 22</span></h5>
+                                <p>Hey!! What are you doing tonight ?</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="mr-3 align-self-center rounded-circle" src="assets/images/users/boy.svg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5>James Simpsons<span class="badge badge-success">2</span><span class="timing">Feb 15</span></h5>
+                                <p>What's up ???</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="mr-3 align-self-center rounded-circle" src="assets/images/users/men.svg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5>Mark Witherspoon<span class="badge badge-success">3</span><span class="timing">Mar 03</span></h5>
+                                <p>I will be late today in office.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <img class="mr-3 align-self-center rounded-circle" src="assets/images/users/women.svg" alt="Generic placeholder image">
+                            <div class="media-body">
+                                <h5>Jenniffer Wills<span class="badge badge-success">4</span><span class="timing">Apr 05</span></h5>
+                                <p>Venture presentation is ready.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="pills-emails" role="tabpanel" aria-labelledby="pills-emails-tab">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <span class="mr-3 align-self-center img-icon">N</span>
+                            <div class="media-body">
+                                <h5>Nelson Smith<span class="timing">Jan 22</span></h5>
+                                <p><span class="badge badge-danger-inverse">WORK</span>Salary has been processed.</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 align-self-center img-icon">C</span>
+                            <div class="media-body">
+                                <h5>Courtney Cox<i class="feather icon-star text-warning ml-2"></i><span class="timing">Feb 15</span></h5>
+                                <p><span class="badge badge-success-inverse">URGENT</span>New product launching...</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 align-self-center img-icon">R</span>
+                            <div class="media-body">
+                                <h5>Rachel White<span class="timing">Mar 03</span></h5>
+                                <p><span class="badge badge-secondary-inverse">ORDER</span><span class="badge badge-info-inverse">SHOPPING</span>Your order has been...</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 align-self-center img-icon">F</span>
+                            <div class="media-body">
+                                <h5>Freepik<span class="timing">Mar 03</span></h5>
+                                <p><a href="#" class="badge badge-primary mr-2">VERIFY NOW</a>New Sign verification req...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="pills-actions" role="tabpanel" aria-labelledby="pills-actions-tab">
+                    <ul class="list-unstyled">
+                        <li class="media">
+                            <span class="mr-3 action-icon badge badge-success-inverse"><i class="feather icon-check"></i></span>
+                            <div class="media-body">
+                                <h5 class="action-title">Payment Success !!!</h5>
+                                <p class="my-3">We have received your payment toward ad Account : 9876543210. Your Ad is Running.</p>
+                                <p><span class="badge badge-danger-inverse">INFO</span><span class="badge badge-info-inverse">STATUS</span><span class="timing">Today, 09:39 PM</span></p>                            
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 action-icon badge badge-primary-inverse"><i class="feather icon-calendar"></i></span>
+                            <div class="media-body">
+                                <h5 class="action-title">Nobita Applied for Leave.</h5>
+                                <p class="my-3">Nobita applied for leave due to personal reasons on 22nd Feb.</p>
+                                <p><span class="badge badge-success">APPROVE</span><span class="badge badge-danger">REJECT</span><span class="timing">Yesterday, 05:25 PM</span></p>                            
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 action-icon badge badge-danger-inverse"><i class="feather icon-alert-triangle"></i></span>
+                            <div class="media-body">
+                                <h5 class="action-title">Alert</h5>
+                                <p class="my-3">There has been new Log in fron your account at Melbourne. Mark it safe or report.</p>
+                                <p><i class="feather icon-check text-success mr-3"></i><a href="#" class="text-muted">Report Now</a><span class="timing">5 Jan 2019, 02:13 PM</span></p>                            
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="mr-3 action-icon badge badge-warning-inverse"><i class="feather icon-award"></i></span>
+                            <div class="media-body">
+                                <h5 class="action-title">Congratulations !!!</h5>
+                                <p class="my-3">Your role in the organization has been changed from Editor to Chief Strategist.</p>
+                                <p><span class="badge badge-danger-inverse">ACTIVITY</span><span class="timing">10 Jan 2019, 08:49 PM</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infobar-notifications-sidebar-overlay"></div>
+    <!-- End Infobar Notifications Sidebar -->
+    <!-- Start Infobar Setting Sidebar -->
+    <div id="infobar-settings-sidebar" class="infobar-settings-sidebar">
+        <div class="infobar-settings-sidebar-head d-flex w-100 justify-content-between">
+            <h4>Settings</h4><a href="javascript:void(0)" id="infobar-settings-close" class="infobar-settings-close"><img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close"></a>
+        </div>
+        <div class="infobar-settings-sidebar-body">
+            <div class="custom-color-setting">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <h6 class="mb-3">Select Color</h6>
+                    </div>
+                    <div class="col-12">
+                        <div class="custom-radio-button ml-1">
+                            <div class="form-check-inline radio-primary">
+                              <input type="radio" id="customRadioInlineSidebar1" name="customRadioInlineSidebar" checked>
+                              <label for="customRadioInlineSidebar1"></label>
+                            </div>
+                            <div class="form-check-inline radio-secondary">
+                              <input type="radio" id="customRadioInlineSidebar2" name="customRadioInlineSidebar">
+                              <label for="customRadioInlineSidebar2"></label>
+                            </div>
+                            <div class="form-check-inline radio-success">
+                              <input type="radio" id="customRadioInlineSidebar3" name="customRadioInlineSidebar">
+                              <label for="customRadioInlineSidebar3"></label>
+                            </div>
+                            <div class="form-check-inline radio-danger">
+                              <input type="radio" id="customRadioInlineSidebar4" name="customRadioInlineSidebar">
+                              <label for="customRadioInlineSidebar4"></label>
+                            </div>
+                            <div class="form-check-inline radio-warning">
+                              <input type="radio" id="customRadioInlineSidebar5" name="customRadioInlineSidebar">
+                              <label for="customRadioInlineSidebar5"></label>
+                            </div>
+                            <div class="form-check-inline radio-info">
+                              <input type="radio" id="customRadioInlineSidebar6" name="customRadioInlineSidebar">
+                              <label for="customRadioInlineSidebar6"></label>
+                            </div>
+                            <div class="form-check-inline radio-light">
+                              <input type="radio" id="customRadioInlineSidebar7" name="customRadioInlineSidebar">
+                              <label for="customRadioInlineSidebar7"></label>
+                            </div>
+                            <div class="form-check-inline radio-dark">
+                              <input type="radio" id="customRadioInlineSidebar8" name="customRadioInlineSidebar">
+                              <label for="customRadioInlineSidebar8"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-mode-setting">
+                <div class="row align-items-center pb-3">
+                    <div class="col-8"><h6 class="mb-0">Night Mode</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-night-mode" checked /></div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-8"><h6 class="mb-0">Navigation Sidebar</h6></div>
+                    <div class="col-4 text-right"><input type="checkbox" class="js-switch-navigation-sidebar" checked /></div>
+                </div>
+            </div>
+            <div class="custom-layout-setting">
+                <div class="row align-items-center pb-3">
+                    <div class="col-12">
+                        <h6 class="mb-3">Select Account</h6>
+                    </div>
+                    <div class="col-6">
+                        <div class="account-box active">
+                            <img src="assets/images/users/boy.svg" class="img-fluid" alt="user">
+                            <h5>Shourya</h5>
+                            <p>CEO</p>
+                        </div>                        
+                    </div>
+                    <div class="col-6">
+                        <div class="account-box">
+                            <img src="assets/images/users/women.svg" class="img-fluid" alt="user">
+                            <h5>Amy</h5>
+                            <p>COO</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="account-box">
+                            <img src="assets/images/users/men.svg" class="img-fluid" alt="user">
+                            <h5>John</h5>
+                            <p>MD</p>
+                        </div>                        
+                    </div>
+                    <div class="col-6">
+                        <div class="account-box">
+                            <p class="dash-analytic-icon"><i class="feather icon-plus font-35"></i></p>
+                            <h5>Add</h5>
+                            <p>ACCOUNT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="infobar-settings-sidebar-overlay"></div>
+    <!-- End Infobar Setting Sidebar -->
+    <!-- Start Containerbar -->
+    <div id="containerbar" class="container-fluid">
+        <!-- Start Rightbar -->
+        <div class="rightbar">
+            <!-- Start Topbar Mobile -->
+            <div class="topbar-mobile">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="mobile-logobar">
+                            <a href="index.html" class="mobile-logo"><img src="assets/images/logo.svg" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="mobile-togglebar">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item">
+                                    <div class="topbar-toggle-icon">
+                                        <a class="topbar-toggle-hamburger" href="javascript:void();">
+                                            <img src="assets/images/svg-icon/horizontal.svg" class="img-fluid menu-hamburger-horizontal" alt="horizontal">
+                                            <img src="assets/images/svg-icon/verticle.svg" class="img-fluid menu-hamburger-vertical" alt="verticle">
+                                         </a>
+                                     </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="menubar">
+                                        <a class="menu-hamburger navbar-toggle bg-transparent" href="javascript:void();" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="true">
+                                            <img src="assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                            <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
+                                        </a>
+                                     </div>
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Topbar -->
+            <div class="topbar">
+                <!-- Start container-fluid -->
+                <div class="container-fluid">
+                    <!-- Start row -->
+                    <div class="row align-items-center">
+                        <!-- Start col -->
+                        <div class="col-md-12 align-self-center">
+                            <div class="togglebar">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <div class="logobar">
+                                            <a href="index.html" class="logo logo-large"><img src="assets/images/logo.svg" class="img-fluid" alt="logo"></a>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="searchbar">
+                                            <form>
+                                                <div class="input-group">
+                                                  <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+                                                  <div class="input-group-append">
+                                                    <button class="btn" type="submit" id="button-addon2"><img src="assets/images/svg-icon/search.svg" class="img-fluid" alt="search"></button>
+                                                  </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="infobar">
+                                <ul class="list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <div class="notifybar">
+                                            <a href="javascript:void(0)" id="infobar-notifications-open" class="infobar-icon">
+                                                <img src="assets/images/svg-icon/notifications.svg" class="img-fluid" alt="notifications">
+                                                <span class="live-icon"></span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="settingbar">
+                                            <a href="javascript:void(0)" id="infobar-settings-open" class="infobar-icon">
+                                                <img src="assets/images/svg-icon/settings.svg" class="img-fluid" alt="settings">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="languagebar">
+                                            <div class="dropdown">
+                                              <a class="dropdown-toggle" href="#" role="button" id="languagelink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag flag-icon-us flag-icon-squared"></i></a>
+                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languagelink">
+                                                <a class="dropdown-item" href="#"><i class="flag flag-icon-us flag-icon-squared"></i>English</a>
+                                                <a class="dropdown-item" href="#"><i class="flag flag-icon-cn flag-icon-squared"></i>Chinese</a>
+                                                <a class="dropdown-item" href="#"><i class="flag flag-icon-ru flag-icon-squared"></i>Russian</a>
+                                                <a class="dropdown-item" href="#"><i class="flag flag-icon-es flag-icon-squared"></i>Spanish</a>
+                                              </div>
+                                            </div>
+                                        </div>                                   
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="profilebar">
+                                            <div class="dropdown">
+                                              <a class="dropdown-toggle" href="#" role="button" id="profilelink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="assets/images/users/profile.svg" class="img-fluid" alt="profile"><span class="feather icon-chevron-down live-icon"></span></a>
+                                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profilelink">
+                                                <div class="dropdown-item">
+                                                    <div class="profilename">
+                                                      <h5>Shourya Kumar</h5>
+                                                      <p>Social Media Strategist</p>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown-item">
+                                                    <div class="userbox">
+                                                        <ul class="list-inline mb-0">
+                                                            <li class="list-inline-item"><a href="#" class="profile-icon"><img src="assets/images/svg-icon/user.svg" class="img-fluid" alt="user"></a></li>
+                                                            <li class="list-inline-item"><a href="#" class="profile-icon"><img src="assets/images/svg-icon/email.svg" class="img-fluid" alt="email"></a></li>
+                                                            <li class="list-inline-item"><a href="#" class="profile-icon"><img src="assets/images/svg-icon/logout.svg" class="img-fluid" alt="logout"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                              </div>
+                                            </div>
+                                        </div>                                   
+                                    </li>
+                                    <li class="list-inline-item menubar-toggle">
+                                        <div class="menubar">
+                                            <a class="menu-hamburger navbar-toggle bg-transparent" href="javascript:void();" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="true">
+                                                <img src="assets/images/svg-icon/collapse.svg" class="img-fluid menu-hamburger-collapse" alt="collapse">
+                                                <img src="assets/images/svg-icon/close.svg" class="img-fluid menu-hamburger-close" alt="close">
+                                            </a>
+                                         </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End col -->
+                    </div> 
+                    <!-- End row -->
+                </div>
+                <!-- End container-fluid -->
+            </div>
+            <!-- End Topbar -->
+            <!-- Start Navigationbar -->
+            <div class="navigationbar">
+                <!-- Start container-fluid -->
+                <div class="container-fluid">
+                    <!-- Start Horizontal Nav -->
+                    <nav class="horizontal-nav mobile-navbar fixed-navbar">
+                        <div class="collapse navbar-collapse" id="navbar-menu">
+                          <ul class="horizontal-menu">
+                            <li class="scroll dropdown">
+                                <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/svg-icon/dashboard.svg" class="img-fluid" alt="dashboard"><span>Dashboard</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="index.html"><i class="mdi mdi-circle"></i>Social Media</a></li>
+                                    <li><a href="dashboard-ecommerce.html"><i class="mdi mdi-circle"></i>eCommerce</a></li>
+                                    <li><a href="dashboard-analytics.html"><i class="mdi mdi-circle"></i>Analytics</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/svg-icon/layouts.svg" class="img-fluid" alt="layouts"><span>Layouts</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../light-vertical/index.html"><i class="mdi mdi-circle"></i>Light - Vertical</a></li> 
+                                    <li><a href="../light-horizontal/index.html"><i class="mdi mdi-circle"></i>Light - Horizontal</a></li>
+                                    <li><a href="../dark-vertical/index.html"><i class="mdi mdi-circle"></i>Dark - Vertical</a></li> 
+                                    <li><a href="#"><i class="mdi mdi-circle"></i>Dark - Horizontal</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/svg-icon/apps.svg" class="img-fluid" alt="apps"><span>Apps</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="apps-calender.html"><i class="mdi mdi-circle"></i>Calender</a></li>
+                                    <li><a href="apps-chat.html"><i class="mdi mdi-circle"></i>Chat</a></li>
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown" ><i class="mdi mdi-circle"></i>Email</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="apps-email-inbox.html"><i class="mdi mdi-circle"></i>Email Inbox</a></li>
+                                            <li><a href="apps-email-open.html"><i class="mdi mdi-circle"></i>Email Open</a></li>
+                                            <li><a href="apps-email-compose.html"><i class="mdi mdi-circle"></i>Email Compose</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="apps-kanban-board.html"><i class="mdi mdi-circle"></i>Kanban Board</a></li>
+                                    <li><a href="apps-onboarding-screens.html"><i class="mdi mdi-circle"></i>Onboarding Screens</a></li>
+                                </ul>
+                            </li>                            
+                            <li class="dropdown">
+                                <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/svg-icon/components.svg" class="img-fluid" alt="components"><span>Components</span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-circle"></i><span>Forms</span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="form-inputs.html"><i class="mdi mdi-circle"></i>Form Inputs</a></li>
+                                            <li><a href="form-groups.html"><i class="mdi mdi-circle"></i>Form Groups</a></li>
+                                            <li><a href="form-layouts.html"><i class="mdi mdi-circle"></i>Form Layouts</a></li>
+                                            <li><a href="form-colorpickers.html"><i class="mdi mdi-circle"></i>Form Color Pickers</a></li>
+                                            <li><a href="form-datepickers.html"><i class="mdi mdi-circle"></i>Form Date Pickers</a></li>
+                                            <li><a href="form-editors.html"><i class="mdi mdi-circle"></i>Form Editors</a></li>
+                                            <li><a href="form-file-uploads.html"><i class="mdi mdi-circle"></i>Form File Uploads</a></li>
+                                            <li><a href="form-input-mask.html"><i class="mdi mdi-circle"></i>Form Input Mask</a></li>
+                                            <li><a href="form-maxlength.html"><i class="mdi mdi-circle"></i>Form MaxLength</a></li>
+                                            <li><a href="form-selects.html"><i class="mdi mdi-circle"></i>Form Selects</a></li>
+                                            <li><a href="form-touchspin.html"><i class="mdi mdi-circle"></i>Form Touchspin</a></li>
+                                            <li><a href="form-validations.html"><i class="mdi mdi-circle"></i>Form Validations</a></li>
+                                            <li><a href="form-wizards.html"><i class="mdi mdi-circle"></i>Form Wizards</a></li>
+                                            <li><a href="form-xeditable.html"><i class="mdi mdi-circle"></i>Form X-editable</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown" ><i class="mdi mdi-circle"></i>Icons</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="icon-theta.html"><i class="mdi mdi-circle"></i>Theta Icons</a></li>
+                                            <li><a href="icon-dripicons.html"><i class="mdi mdi-circle"></i>Dripicons</a></li>
+                                            <li><a href="icon-feather.html"><i class="mdi mdi-circle"></i>Feather</a></li>
+                                            <li><a href="icon-flag.html"><i class="mdi mdi-circle"></i>Flag</a></li>  
+                                            <li><a href="icon-font-awesome.html"><i class="mdi mdi-circle"></i>Font Awesome</a></li>
+                                            <li><a href="icon-ionicons.html"><i class="mdi mdi-circle"></i>Ion Icons</a></li>
+                                            <li><a href="icon-line-awesome.html"><i class="mdi mdi-circle"></i>Line Awesome</a></li>
+                                            <li><a href="icon-material-design.html"><i class="mdi mdi-circle"></i>Material Design</a></li>
+                                            <li><a href="icon-simple-line.html"><i class="mdi mdi-circle"></i>Simple Line Icons</a></li>
+                                            <li><a href="icon-socicon.html"><i class="mdi mdi-circle"></i>Socicon</a></li>
+                                            <li><a href="icon-themify.html"><i class="mdi mdi-circle"></i>Themify</a></li>
+                                            <li><a href="icon-typicons.html"><i class="mdi mdi-circle"></i>Typicons</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-circle"></i>Charts</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="chart-c3.html"><i class="mdi mdi-circle"></i>C3 Chart</a></li>
+                                            <li><a href="chart-chartistjs.html"><i class="mdi mdi-circle"></i>Chartist Chart</a></li> 
+                                            <li><a href="chart-chartjs.html"><i class="mdi mdi-circle"></i>Chartjs Chart</a></li>
+                                            <li><a href="chart-flot.html"><i class="mdi mdi-circle"></i>Flot Chart</a></li>
+                                            <li><a href="chart-knob.html"><i class="mdi mdi-circle"></i>Knob Chart</a></li>
+                                            <li><a href="chart-morris.html"><i class="mdi mdi-circle"></i>Morris Chart</a></li>
+                                            <li><a href="chart-piety.html"><i class="mdi mdi-circle"></i>Piety Chart</a></li>
+                                            <li><a href="chart-sparkline.html"><i class="mdi mdi-circle"></i>Sparkline Chart</a></li> 
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-circle"></i>Tables</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="table-bootstrap.html"><i class="mdi mdi-circle"></i>Bootstrap Table</a></li>
+                                            <li><a href="table-datatable.html"><i class="mdi mdi-circle"></i>Data Table</a></li>
+                                            <li><a href="table-editable.html"><i class="mdi mdi-circle"></i>Editable Table</a></li>
+                                            <li><a href="table-footable.html"><i class="mdi mdi-circle"></i>Foo Table</a></li>
+                                            <li><a href="table-rwdtable.html"><i class="mdi mdi-circle"></i>RWD Table</a></li> 
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-circle"></i>Maps</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="map-google.html"><i class="mdi mdi-circle"></i>Google Map</a></li>
+                                            <li><a href="map-vector.html"><i class="mdi mdi-circle"></i>Vector Map</a></li> 
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/svg-icon/pages.svg" class="img-fluid" alt="pages"><span>Pages</span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown" ><i class="mdi mdi-circle"></i>eCommerce</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="ecommerce-product-list.html"><i class="mdi mdi-circle"></i>Product List</a></li>
+                                            <li><a href="ecommerce-product-detail.html"><i class="mdi mdi-circle"></i>Product Detail</a></li>
+                                            <li><a href="ecommerce-order-list.html"><i class="mdi mdi-circle"></i>Order List</a></li>
+                                            <li><a href="ecommerce-order-detail.html"><i class="mdi mdi-circle"></i>Order Detail</a></li> 
+                                            <li><a href="ecommerce-shop.html"><i class="mdi mdi-circle"></i>Shop</a></li>
+                                            <li><a href="ecommerce-single-product.html"><i class="mdi mdi-circle"></i>Single Product</a></li>
+                                            <li><a href="ecommerce-cart.html"><i class="mdi mdi-circle"></i>Cart</a></li>
+                                            <li><a href="ecommerce-checkout.html"><i class="mdi mdi-circle"></i>Checkout</a></li>
+                                            <li><a href="ecommerce-thankyou.html"><i class="mdi mdi-circle"></i>Thank You</a></li>
+                                            <li><a href="ecommerce-myaccount.html"><i class="mdi mdi-circle"></i>My Account</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-circle"></i>Basic Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="page-starter.html"><i class="mdi mdi-circle"></i>Starter Page</a></li>
+                                            <li><a href="page-blog.html"><i class="mdi mdi-circle"></i>Blog</a></li>
+                                            <li><a href="page-faq.html"><i class="mdi mdi-circle"></i>FAQ</a></li>
+                                            <li><a href="page-gallery.html"><i class="mdi mdi-circle"></i>Gallery</a></li>
+                                            <li><a href="page-invoice.html"><i class="mdi mdi-circle"></i>Invoice</a></li>
+                                            <li><a href="page-pricing.html"><i class="mdi mdi-circle"></i>Pricing</a></li>
+                                            <li><a href="page-timeline.html"><i class="mdi mdi-circle"></i>Timeline</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-circle"></i>User Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="user-login.html"><i class="mdi mdi-circle"></i>Login</a></li>
+                                            <li><a href="user-register.html"><i class="mdi mdi-circle"></i>Register</a></li>
+                                            <li><a href="user-forgotpsw.html"><i class="mdi mdi-circle"></i>Forgot Password</a></li>
+                                            <li><a href="user-lock-screen.html"><i class="mdi mdi-circle"></i>Lock Screen</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><i class="mdi mdi-circle"></i>Error Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="error-comingsoon.html"><i class="mdi mdi-circle"></i>Coming Soon</a></li>  
+                                            <li><a href="error-maintenance.html"><i class="mdi mdi-circle"></i>Maintenance</a></li>
+                                            <li><a href="error-404.html"><i class="mdi mdi-circle"></i>Error 404</a></li>
+                                            <li><a href="error-500.html"><i class="mdi mdi-circle"></i>Error 500</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="scroll"><a href="widgets.html"><img src="assets/images/svg-icon/widgets.svg" class="img-fluid" alt="widgets"><span>Widgets</span></a></li>
+                            <li class="dropdown menu-item-has-mega-menu">
+                                <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/svg-icon/basic.svg" class="img-fluid" alt="basic"><span>UI Kits</span></a>
+                                <div class="mega-menu dropdown-menu">
+                                    <ul class="mega-menu-row" role="menu">
+                                        <li class="mega-menu-col col-md-3">
+                                            <ul class="sub-menu">
+                                                <li><a href="basic-ui-kits-alerts.html"><i class="mdi mdi-circle"></i>Alerts</a></li>
+                                                <li><a href="basic-ui-kits-badges.html"><i class="mdi mdi-circle"></i>Badges</a></li>
+                                                <li><a href="basic-ui-kits-buttons.html"><i class="mdi mdi-circle"></i>Buttons</a></li>
+                                                <li><a href="basic-ui-kits-cards.html"><i class="mdi mdi-circle"></i>Cards</a></li>
+                                                <li><a href="basic-ui-kits-carousel.html"><i class="mdi mdi-circle"></i>Carousel</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-col col-md-3">
+                                            <ul class="sub-menu">
+                                                <li><a href="basic-ui-kits-collapse.html"><i class="mdi mdi-circle"></i>Collapse</a></li>
+                                                <li><a href="basic-ui-kits-dropdowns.html"><i class="mdi mdi-circle"></i>Dropdowns</a></li>
+                                                <li><a href="basic-ui-kits-embeds.html"><i class="mdi mdi-circle"></i>Embeds</a></li>
+                                                <li><a href="basic-ui-kits-grids.html"><i class="mdi mdi-circle"></i>Grids</a></li>
+                                                <li><a href="basic-ui-kits-images.html"><i class="mdi mdi-circle"></i>Images</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-col col-md-3">
+                                            <ul class="sub-menu">
+                                                <li><a href="basic-ui-kits-media.html"><i class="mdi mdi-circle"></i>Media</a></li>
+                                                <li><a href="basic-ui-kits-modals.html"><i class="mdi mdi-circle"></i>Modals</a></li>
+                                                <li><a href="basic-ui-kits-paginations.html"><i class="mdi mdi-circle"></i>Paginations</a></li>
+                                                <li><a href="basic-ui-kits-popovers.html"><i class="mdi mdi-circle"></i>Popovers</a></li>
+                                                <li><a href="basic-ui-kits-progressbars.html"><i class="mdi mdi-circle"></i>Progress Bars</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="mega-menu-col col-md-3">
+                                            <ul class="sub-menu">
+                                                <li><a href="basic-ui-kits-spinners.html"><i class="mdi mdi-circle"></i>Spinners</a></li>
+                                                <li><a href="basic-ui-kits-tabs.html"><i class="mdi mdi-circle"></i>Tabs</a></li>   
+                                                <li><a href="basic-ui-kits-toasts.html"><i class="mdi mdi-circle"></i>Toasts</a></li>     
+                                                <li><a href="basic-ui-kits-tooltips.html"><i class="mdi mdi-circle"></i>Tooltips</a></li>
+                                                <li><a href="basic-ui-kits-typography.html"><i class="mdi mdi-circle"></i>Typography</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="dropdown">
+                                <a href="javaScript:void();" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/images/svg-icon/advanced.svg" class="img-fluid" alt="advanced"><span>Advanced</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="advanced-ui-kits-image-crop.html"><i class="mdi mdi-circle"></i>Image Crop</a></li>  
+                                    <li><a href="advanced-ui-kits-jquery-confirm.html"><i class="mdi mdi-circle"></i>jQuery Confirm</a></li>
+                                    <li><a href="advanced-ui-kits-nestable.html"><i class="mdi mdi-circle"></i>Nestable</a></li>
+                                    <li><a href="advanced-ui-kits-pnotify.html"><i class="mdi mdi-circle"></i>Pnotify</a></li>
+                                    <li><a href="advanced-ui-kits-range-slider.html"><i class="mdi mdi-circle"></i>Range Slider</a></li>
+                                    <li><a href="advanced-ui-kits-ratings.html"><i class="mdi mdi-circle"></i>Ratings</a></li>
+                                    <li><a href="advanced-ui-kits-session-timeout.html"><i class="mdi mdi-circle"></i>Session Timeout</a></li>
+                                    <li><a href="advanced-ui-kits-sweet-alerts.html"><i class="mdi mdi-circle"></i>Sweet Alerts</a></li>
+                                    <li><a href="advanced-ui-kits-switchery.html"><i class="mdi mdi-circle"></i>Switchery</a></li>
+                                    <li><a href="advanced-ui-kits-toolbar.html"><i class="mdi mdi-circle"></i>Toolbar</a></li>
+                                    <li><a href="advanced-ui-kits-tour.html"><i class="mdi mdi-circle"></i>Tour</a></li>
+                                    <li><a href="advanced-ui-kits-treeview.html"><i class="mdi mdi-circle"></i>Tree View</a></li>
+                                </ul>
+                            </li> 
+                          </ul>
+                        </div>
+                    </nav>
+                    <!-- End Horizontal Nav -->
+                </div>
+                <!-- End container-fluid -->
+            </div>
+            <!-- End Navigationbar -->
+            <!-- Start Breadcrumbbar -->                    
+            <div class="breadcrumbbar">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-lg-8">
+                        <h4 class="page-title">Typicons</h4>
+                        <div class="breadcrumb-list">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Icons</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Typicons</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="widgetbar">
+                            <button class="btn btn-primary">Add Widget</button>
+                        </div>                        
+                    </div>
+                </div>          
+            </div>
+            <!-- End Breadcrumbbar -->
+            <!-- Start Contentbar -->    
+            <div class="contentbar">
+                <!-- Start row -->
+                <div class="row">
+                    <!-- Start col -->
+                    <div class="col-lg-12">
+                        <div class="card m-b-30">
+                            <div class="card-header">
+                                <h5 class="card-title">Typicons Icons</h5>
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-subtitle">Usage <code>&lt;i class="typcn typcn-adjust-brightness"&gt;&lt;/i&gt;</code>.</h6>
+                                <div class="row icon-box-list">                                
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-adjust-brightness"></i>typcn typcn-adjust-brightness</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-adjust-contrast"></i>typcn typcn-adjust-contrast</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-anchor-outline"></i>typcn typcn-anchor-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-anchor"></i>typcn typcn-anchor</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-archive"></i>typcn typcn-archive</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-back-outline"></i>typcn typcn-arrow-back-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-back"></i>typcn typcn-arrow-back</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-down-outline"></i>typcn typcn-arrow-down-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-down-thick"></i>typcn typcn-arrow-down-thick</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-down"></i>typcn typcn-arrow-down</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-forward-outline"></i>typcn typcn-arrow-forward-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-forward"></i>typcn typcn-arrow-forward</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-left-outline"></i>typcn typcn-arrow-left-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-left-thick"></i>typcn typcn-arrow-left-thick</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-left"></i>typcn typcn-arrow-left</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-loop-outline"></i>typcn typcn-arrow-loop-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-loop"></i>typcn typcn-arrow-loop</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-maximise-outline"></i>typcn typcn-arrow-maximise-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-maximise"></i>typcn typcn-arrow-maximise</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-minimise-outline"></i>typcn typcn-arrow-minimise-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-minimise"></i>typcn typcn-arrow-minimise</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-move-outline"></i>typcn typcn-arrow-move-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-move"></i>typcn typcn-arrow-move</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-repeat-outline"></i>typcn typcn-arrow-repeat-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-repeat"></i>typcn typcn-arrow-repeat</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-right-outline"></i>typcn typcn-arrow-right-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-right-thick"></i>typcn typcn-arrow-right-thick</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-right"></i>typcn typcn-arrow-right</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-shuffle"></i>typcn typcn-arrow-shuffle</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-sorted-down"></i>typcn typcn-arrow-sorted-down</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-sorted-up"></i>typcn typcn-arrow-sorted-up</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-sync-outline"></i>typcn typcn-arrow-sync-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-sync"></i>typcn typcn-arrow-sync</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-unsorted"></i>typcn typcn-arrow-unsorted</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-up-outline"></i>typcn typcn-arrow-up-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-up-thick"></i>typcn typcn-arrow-up-thick</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-arrow-up"></i>typcn typcn-arrow-up</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-at"></i>typcn typcn-at</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-attachment-outline"></i>typcn typcn-attachment-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-attachment"></i>typcn typcn-attachment</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-backspace-outline"></i>typcn typcn-backspace-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-backspace"></i>typcn typcn-backspace</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-battery-charge"></i>typcn typcn-battery-charge</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-battery-full"></i>typcn typcn-battery-full</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-battery-high"></i>typcn typcn-battery-high</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-battery-low"></i>typcn typcn-battery-low</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-battery-mid"></i>typcn typcn-battery-mid</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-beaker"></i>typcn typcn-beaker</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-beer"></i>typcn typcn-beer</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-bell"></i>typcn typcn-bell</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-book"></i>typcn typcn-book</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-bookmark"></i>typcn typcn-bookmark</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-briefcase"></i>typcn typcn-briefcase</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-brush"></i>typcn typcn-brush</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-business-card"></i>typcn typcn-business-card</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-calculator"></i>typcn typcn-calculator</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-calendar-outline"></i>typcn typcn-calendar-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-calendar"></i>typcn typcn-calendar</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-camera-outline"></i>typcn typcn-camera-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-camera"></i>typcn typcn-camera</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-cancel-outline"></i>typcn typcn-cancel-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-cancel"></i>typcn typcn-cancel</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chart-area-outline"></i>typcn typcn-chart-area-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chart-area"></i>typcn typcn-chart-area</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chart-bar-outline"></i>typcn typcn-chart-bar-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chart-bar"></i>typcn typcn-chart-bar</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chart-line-outline"></i>typcn typcn-chart-line-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chart-line"></i>typcn typcn-chart-line</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chart-pie-outline"></i>typcn typcn-chart-pie-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chart-pie"></i>typcn typcn-chart-pie</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chevron-left-outline"></i>typcn typcn-chevron-left-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chevron-left"></i>typcn typcn-chevron-left</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chevron-right-outline"></i>typcn typcn-chevron-right-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-chevron-right"></i>typcn typcn-chevron-right</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-clipboard"></i>typcn typcn-clipboard</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-cloud-storage"></i>typcn typcn-cloud-storage</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-cloud-storage-outline"></i>typcn typcn-cloud-storage-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-code-outline"></i>typcn typcn-code-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-code"></i>typcn typcn-code</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-coffee"></i>typcn typcn-coffee</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-cog-outline"></i>typcn typcn-cog-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-cog"></i>typcn typcn-cog</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-compass"></i>typcn typcn-compass</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-contacts"></i>typcn typcn-contacts</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-credit-card"></i>typcn typcn-credit-card</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-css3"></i>typcn typcn-css3</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-database"></i>typcn typcn-database</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-delete-outline"></i>typcn typcn-delete-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-delete"></i>typcn typcn-delete</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-device-desktop"></i>typcn typcn-device-desktop</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-device-laptop"></i>typcn typcn-device-laptop</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-device-phone"></i>typcn typcn-device-phone</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-device-tablet"></i>typcn typcn-device-tablet</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-directions"></i>typcn typcn-directions</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-divide-outline"></i>typcn typcn-divide-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-divide"></i>typcn typcn-divide</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-document-add"></i>typcn typcn-document-add</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-document-delete"></i>typcn typcn-document-delete</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-document-text"></i>typcn typcn-document-text</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-document"></i>typcn typcn-document</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-download-outline"></i>typcn typcn-download-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-download"></i>typcn typcn-download</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-dropbox"></i>typcn typcn-dropbox</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-edit"></i>typcn typcn-edit</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-eject-outline"></i>typcn typcn-eject-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-eject"></i>typcn typcn-eject</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-equals-outline"></i>typcn typcn-equals-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-equals"></i>typcn typcn-equals</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-export-outline"></i>typcn typcn-export-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-export"></i>typcn typcn-export</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-eye-outline"></i>typcn typcn-eye-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-eye"></i>typcn typcn-eye</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-feather"></i>typcn typcn-feather</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-film"></i>typcn typcn-film</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-filter"></i>typcn typcn-filter</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-flag-outline"></i>typcn typcn-flag-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-flag"></i>typcn typcn-flag</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-flash-outline"></i>typcn typcn-flash-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-flash"></i>typcn typcn-flash</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-flow-children"></i>typcn typcn-flow-children</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-flow-merge"></i>typcn typcn-flow-merge</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-flow-parallel"></i>typcn typcn-flow-parallel</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-flow-switch"></i>typcn typcn-flow-switch</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-folder-add"></i>typcn typcn-folder-add</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-folder-delete"></i>typcn typcn-folder-delete</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-folder-open"></i>typcn typcn-folder-open</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-folder"></i>typcn typcn-folder</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-gift"></i>typcn typcn-gift</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-globe-outline"></i>typcn typcn-globe-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-globe"></i>typcn typcn-globe</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-group-outline"></i>typcn typcn-group-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-group"></i>typcn typcn-group</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-headphones"></i>typcn typcn-headphones</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-heart-full-outline"></i>typcn typcn-heart-full-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-heart-half-outline"></i>typcn typcn-</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-heart-outline"></i>typcn typcn-heart-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-heart"></i>typcn typcn-heart</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-home-outline"></i>typcn typcn-home-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-home"></i>typcn typcn-home</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-html5"></i>typcn typcn-html5</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-image-outline"></i>typcn typcn-image-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-image"></i>typcn typcn-image</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-infinity-outline"></i>typcn typcn-infinity-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-infinity"></i>typcn typcn-infinity</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-info-large-outline"></i>typcn typcn-info-large-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-info-large"></i>typcn typcn-info-large</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-info-outline"></i>typcn typcn-info-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-info"></i>typcn typcn-info</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-input-checked-outline"></i>typcn typcn-input-checked-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-input-checked"></i>typcn typcn-input-checked</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-key-outline"></i>typcn typcn-key-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-key"></i>typcn typcn-key</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-keyboard"></i>typcn typcn-keyboard</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-leaf"></i>typcn typcn-leaf</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-lightbulb"></i>typcn typcn-lightbulb</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-link-outline"></i>typcn typcn-link-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-link"></i>typcn typcn-link</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-location-arrow-outline"></i>typcn typcn-location-arrow-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-location-arrow"></i>typcn typcn-location-arrow</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-location-outline"></i>typcn typcn-location-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-location"></i>typcn typcn-location</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-lock-closed-outline"></i>typcn typcn-lock-closed-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-lock-closed"></i>typcn typcn-lock-closed</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-lock-open-outline"></i>typcn typcn-lock-open-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-lock-open"></i>typcn typcn-lock-open</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-mail"></i>typcn typcn-mail</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-map"></i>typcn typcn-map</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-eject-outline"></i>typcn typcn-media-eject-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-eject"></i>typcn typcn-media-eject</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-fast-forward-outline"></i>typcn typcn-media-fast-forward-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-fast-forward"></i>typcn typcn-media-fast-forward</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-pause-outline"></i>typcn typcn-media-pause-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-pause"></i>typcn typcn-media-pause</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-play-outline"></i>typcn typcn-media-play-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-play-reverse-outline"></i>typcn typcn-media-play-reverse-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-play-reverse"></i>typcn typcn-media-play-reverse</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-play"></i>typcn typcn-media-play</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-record-outline"></i>typcn typcn-media-record-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-record"></i>typcn typcn-media-record</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-rewind-outline"></i>typcn typcn-media-rewind-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-rewind"></i>typcn typcn-media-rewind</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-stop-outline"></i>typcn typcn-media-stop-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-media-stop"></i>typcn typcn-media-stop</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-message-typing"></i>typcn typcn-message-typing</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-message"></i>typcn typcn-message</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-messages"></i>typcn typcn-messages</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-microphone-outline"></i>typcn typcn-microphone-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-microphone"></i>typcn typcn-microphone</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-minus-outline"></i>typcn typcn-minus-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-minus"></i>typcn typcn-minus</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-mortar-board"></i>typcn typcn-mortar-board</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-news"></i>typcn typcn-news</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-notes-outline"></i>typcn typcn-notes-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-notes"></i>typcn typcn-notes</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-pen"></i>typcn typcn-pen</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-pencil"></i>typcn typcn-pencil</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-phone-outline"></i>typcn typcn-phone-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-phone"></i>typcn typcn-phone</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-pi-outline"></i>typcn typcn-pi-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-pi"></i>typcn typcn-pi</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-pin-outline"></i>typcn typcn-pin-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-pin"></i>typcn typcn-pin</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-pipette"></i>typcn typcn-pipette</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-plane-outline"></i>typcn typcn-plane-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-plane"></i>typcn typcn-plane</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-plug"></i>typcn typcn-plug</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-plus-outline"></i>typcn typcn-plus-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-plus"></i>typcn typcn-plus</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-point-of-interest-outline"></i>typcn typcn-point-of-interest-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-point-of-interest"></i>typcn typcn-point-of-interest</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-power-outline"></i>typcn typcn-power-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-power"></i>typcn typcn-power</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-printer"></i>typcn typcn-printer</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-puzzle-outline"></i>typcn typcn-puzzle-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-puzzle"></i>typcn typcn-puzzle</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-radar-outline"></i>typcn typcn-radar-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-radar"></i>typcn typcn-typcn-radar</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-refresh-outline"></i>typcn typcn-refresh-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-refresh"></i>typcn typcn-refresh</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-rss-outline"></i>typcn typcn-rss-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-rss"></i>typcn typcn-rss</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-scissors-outline"></i>typcn typcn-scissors-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-scissors"></i>typcn typcn-scissors</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-shopping-bag"></i>typcn typcn-shopping-bag</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-shopping-cart"></i>typcn typcn-shopping-cart</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-at-circular"></i>typcn typcn-social-at-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-dribbble-circular"></i>typcn typcn-social-dribbble-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-dribbble"></i>typcn typcn-social-dribbble</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-facebook-circular"></i>typcn typcn-social-facebook-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-facebook"></i>typcn typcn-social-facebook</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-flickr-circular"></i>typcn typcn-social-flickr-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-flickr"></i>typcn typcn-social-flickr</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-github-circular"></i>typcn typcn-social-github-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-github"></i>typcn typcn-social-github</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-google-plus-circular"></i>typcn typcn-social-google-plus-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-google-plus"></i>typcn typcn-social-google-plus</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-instagram-circular"></i>typcn typcn-social-instagram-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-instagram"></i>typcn typcn-social-instagram</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-last-fm-circular"></i>typcn typcn-social-last-fm-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-last-fm"></i>typcn typcn-social-last-fm</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-linkedin-circular"></i>typcn typcn-social-linkedin-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-linkedin"></i>typcn typcn-social-linkedin</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-pinterest-circular"></i>typcn typcn-social-pinterest-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-pinterest"></i>typcn typcn-social-pinterest</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-skype-outline"></i>typcn typcn-social-skype-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-skype"></i>typcn typcn-social-skype</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-tumbler-circular"></i>typcn typcn-social-tumbler-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-tumbler"></i>typcn typcn-social-tumbler</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-twitter-circular"></i>typcn typcn-social-twitter-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-twitter"></i>typcn typcn-social-twitter</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-vimeo-circular"></i>typcn typcn-social-vimeo-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-vimeo"></i>typcn typcn-social-vimeo</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-youtube-circular"></i>typcn typcn-social-youtube-circular</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-social-youtube"></i>typcn typcn-social-youtube</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-sort-alphabetically-outline"></i>typcn typcn-sort-alphabetically-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-sort-alphabetically"></i>typcn typcn-sort-alphabetically</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-sort-numerically-outline"></i>typcn typcn-sort-numerically-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-sort-numerically"></i>typcn typcn-sort-numerically</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn typcn-spanner-outline"></i>typcn typcn-spanner-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-spanner"></i>typcn typcn-spanner</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-spiral"></i>typcn typcn-spiral</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-star-full-outline"></i>typcn typcn-star-full-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-star-half-outline"></i>typcn typcn-star-half-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-star-half"></i>typcn typcn-star-half</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-star-outline"></i>typcn typcn-star-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-star"></i>typcn typcn-star</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-starburst-outline"></i>typcn typcn-starburst-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-starburst"></i>typcn typcn-starburst</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-stopwatch"></i>typcn typcn-stopwatch</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-support"></i>typcn typcn-support</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-tabs-outline"></i>typcn typcn-tabs-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-tag"></i>typcn typcn-tag</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-tags"></i>typcn typcn-tags</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-th-large-outline"></i>typcn typcn-th-large-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-th-large"></i>typcn typcn-th-large</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-th-list-outline"></i>typcn typcn-th-list-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-th-list"></i>typcn typcn-th-list</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-th-menu-outline"></i>typcn typcn-th-menu-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-th-menu"></i>typcn typcn-th-menu</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-th-small-outline"></i>typcn typcn-th-small-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-th-small"></i>typcn typcn-th-small</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-thermometer"></i>typcn typcn-thermometer</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-thumbs-down"></i>typcn typcn-thumbs-down</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-thumbs-ok"></i>typcn typcn-thumbs-ok</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-thumbs-up"></i>typcn typcn-thumbs-up</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-tick-outline"></i>typcn typcn-tick-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-tick"></i>typcn typcn-tick</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-ticket"></i>typcn typcn-ticket</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-time"></i>typcn typcn-time</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-times-outline"></i>typcn typcn-times-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-times"></i>typcn typcn-times</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-trash"></i>typcn typcn-trash</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-tree"></i>typcn typcn-tree</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-upload-outline"></i>typcn typcn-upload-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-upload"></i>typcn typcn-upload</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-user-add-outline"></i>typcn typcn-user-add-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-user-add"></i>typcn typcn-user-add</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-user-delete-outline"></i>typcn typcn-user-delete-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-user-delete"></i>typcn typcn-user-delete</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-user-outline"></i>typcn typcn-user-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-user"></i>typcn typcn-user</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-vendor-android"></i>typcn typcn-vendor-android</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-vendor-apple"></i>typcn typcn-vendor-apple</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-vendor-microsoft"></i>typcn typcn-vendor-microsoft</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-video-outline"></i>typcn typcn-video-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-video"></i>typcn typcn-video</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-volume-down"></i>typcn typcn-volume-down</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-volume-mute"></i>typcn typcn-volume-mute</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-volume-up"></i>typcn typcn-volume-up</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-volume"></i>typcn typcn-volume</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-warning-outline"></i>typcn typcn-warning-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-warning"></i>typcn typcn-warning</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-watch"></i>typcn typcn-watch</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-waves-outline"></i>typcn typcn-waves-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-waves"></i>typcn typcn-waves</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-cloudy"></i>typcn typcn-weather-cloudy</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-downpour"></i>typcn typcn-weather-downpour</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-night"></i>typcn typcn-weather-night</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-partly-sunny"></i>typcn typcn-weather-partly-sunny</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-shower"></i>typcn typcn-weather-shower</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-snow"></i>typcn typcn-weather-snow</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-stormy"></i>typcn typcn-weather-stormy</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-sunny"></i>typcn typcn-weather-sunny</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-windy-cloudy"></i>typcn typcn-weather-windy-cloudy</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-weather-windy"></i>typcn typcn-weather-windy</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-wi-fi-outline"></i>typcn typcn-wi-fi-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-wi-fi"></i>typcn typcn-wi-fi</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-wine"></i>typcn typcn-wine</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-world-outline"></i>typcn typcn-world-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-world"></i>typcn typcn-world</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-zoom-in-outline"></i>typcn typcn-zoom-in-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-zoom-in"></i>typcn typcn-zoom-in</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-zoom-out-outline"></i>typcn typcn-zoom-out-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-zoom-out"></i>typcn typcn-zoom-out</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-zoom-outline"></i>typcn typcn-zoom-outline</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                                        <p><i class="typcn typcn-zoom"></i>typcn typcn-zoom</p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>                     
+                    </div>
+                    <!-- End col -->
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End Contentbar -->
+            <!-- Start Footerbar -->
+            <div class="footerbar">
+                <footer class="footer">
+                    <p class="mb-0">© 2020 Theta - All Rights Reserved.</p>
+                </footer>
+            </div>
+            <!-- End Footerbar -->
+        </div>
+        <!-- End Rightbar -->
+    </div>
+    <!-- End Containerbar -->
+    <!-- Start js -->        
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/horizontal-menu.js"></script>
+    <!-- Switchery js -->
+    <script src="assets/plugins/switchery/switchery.min.js"></script>
+    <!-- Core js -->
+    <script src="assets/js/core.js"></script>
+    <!-- End js -->
+</body>
+</html>
